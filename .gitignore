@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Virtual Environments
+venv/
+*/venv/
+.env/
+*/.env/
+
+# Datasets and Outputs
+*.csv
+*.png
+*.pdf
+*.xlsx
+*.json
+
+# IDE / OS files
+.DS_Store
+.vscode/
+.idea/
