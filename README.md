@@ -1,113 +1,52 @@
-# 🧠 Quant Finance Lab  
-**Advanced Research & Engineering in Portfolio Optimization, Risk, and Capital Allocation**
+# Quant Finance Lab (Python + AI + Research)
 
-This repository is a collection of *industry-grade quantitative finance projects* focused on modeling, optimization, and risk-adjusted decision-making.  
-Each module is built using **Python**, emphasizing reproducibility, mathematical rigor, and institutional-grade implementation standards.
+This repository is a collection of high-performance quantitative finance models
+developed using Python, statistical modeling, optimization theory, and machine learning.
 
----
-
-## 📂 Repository Structure
-quant-finance-lab/
-│
-├── Project_1/  →  Portfolio Optimization & Efficient Frontier (Markowitz Model)
-├── Project_2/  →  Funding Allocation & CVaR Optimization
-├── Project_3/  →  Liquidity & Capital Optimization (RAROC & Stress Testing)
-├── Project_4/  →  Strategy Backtesting & Signal Evaluation
-│
-├── datasets/   →  Market data, stress scenarios, and liquidity parameters
-├── reports/    →  Visuals and analytics outputs
-└── src/        →  Core modules, optimizers, and reusable components
+The goal: **build institutional-grade trading & risk systems — openly, transparently, and reproducibly.**
 
 ---
 
-## 🚀 Projects Overview
+## 📁 Project Index
 
-### 🧩 **1. Portfolio Optimization (Markowitz Model)**
-- Classical mean–variance optimization  
-- Efficient frontier visualization  
-- Sharpe ratio maximization with no short-selling constraints  
-- Real-time data fetched directly from **Yahoo Finance**
+### ✅ Portfolio & Risk Modeling
+| #  | Project Name | Concepts | Folder |
+|---|--------------|----------|--------|
+| 01 | Portfolio Optimization Engine | Markowitz, Efficient Frontier, Sharpe | `01_Portfolio_Optimization/` |
+| 02 | CVaR-based Funding Optimization | Tail Risk, CVaR, Liquidity Costs | `02_CVaR_Funding_Optimization/` |
+| 03 | Liquidity & Capital Allocation | Basel III, LCR, RAROC, Stress Tests | `03_Liquidity_Capital_Model/` |
+| 04 | Signal Backtesting Engine | P&L attribution, cumulative returns | `04_Backtesting_and_Signal_Model/` |
+| 05 | Multi-Factor Risk Model | Factor loadings (CAPM, sector beta) | `05_Multi_Factor_Risk_Model/` |
+| 06 | Regime Detection Model | HMM, volatility regimes | `06_Regime_Detection_Model/` |
 
-**Key Metrics:**
-- Max Sharpe Ratio: `~0.64`  
-- Expected Annual Return: `~19%`  
-- Volatility: `~26%`
-
-📊 *Outputs:*  
-- `efficient_frontier.png`  
-- `portfolio_weights.png`
+> 🚧 New projects added daily as part of a structured quant research schedule.
 
 ---
 
-### 💰 **2. Funding Optimization with CVaR**
-- Conditional Value-at-Risk (CVaR) minimization  
-- Liquidity-adjusted risk modeling  
-- Realistic funding cost integration  
-- Rebalancing framework and liquidity impact model  
+## 🧠 Tech Stack
 
-**Outputs:**  
-- Optimized funding weights  
-- CVaR and funding cost summary  
-- Allocation visualization (`funding_allocation.png`)
+- **Python** (Pandas, NumPy, SciPy, Scikit-learn, Statsmodels)
+- **Machine Learning** (HMM, regression models, factor estimation)
+- **Risk & Portfolio Libraries**: PyPortfolioOpt, yFinance, Matplotlib
+- **GitHub Actions** (automation coming soon)
 
 ---
 
-### 🏦 **3. Liquidity & Capital Optimization**
-- Computes **Liquidity Coverage Ratio (LCR)**  
-- Optimizes **RAROC (Risk-Adjusted Return on Capital)**  
-- Generates **stress-test scenarios**  
-- Capital allocation across business divisions  
+## ⭐ Vision
 
-**Outputs:**  
-- `raroc_heatmap.png`  
-- `stress_scenarios.csv`  
+The intent of this project is to build:
+- A personal **quant research infrastructure**
+- Systems reusable across **portfolio, trading, and risk**
+- Skill proof for **Quant Strat / Quant Analyst / Quant Dev roles**
 
 ---
 
-### 📈 **4. Backtesting & Strategy Evaluation**
-- Historical strategy simulation  
-- Cumulative returns visualization  
-- Performance metrics: CAGR, Sharpe ratio, drawdown analysis  
+## 📬 Contact
 
-**Outputs:**  
-- `backtest_cumulative.png`  
-- `signal_vs_return.png`  
+If you are a recruiter, quant, or collaborator:
+
+**LinkedIn:** https://www.linkedin.com/in/c-v-k-sai-jagadish-201179229  
+**GitHub:** https://github.com/armouredbeast
 
 ---
-
-## ⚙️ Tech Stack
-| Category | Tools |
-|-----------|--------|
-| Data | `yfinance`, `pandas`, `numpy` |
-| Modeling | `scipy.optimize`, `statsmodels`, `sklearn` |
-| Visualization | `matplotlib`, `seaborn` |
-| Environment | Python 3.13, Linux/macOS compatible |
-
----
-
-## 📚 Concepts Covered
-- Portfolio Theory (Markowitz, Efficient Frontier)
-- Conditional Value-at-Risk (CVaR)
-- Liquidity Coverage Ratio (LCR)
-- RAROC Framework
-- Risk-Adjusted Optimization
-- Backtesting & Performance Analytics
-
----
-
-## 🧠 Author
-**C V K SAI JAGADISH**  
-Quantitative Engineer | Mechanical Engineer turned Financial Technologist  
-Building scalable, AI-integrated quantitative systems for financial decision-making.
-
-🔗 [LinkedIn](www.linkedin.com/in/c-v-k-sai-jagadish-201179229)  📬 [Email](cvksaijagadish@gmail.com)
-
----
-
-## ⭐ Support
-If you find this repository useful, please consider:
-- ⭐ **Starring** the repo  
-- 🧠 **Following** for future quant and AI-finance projects  
-- 🧾 **Opening an Issue** for collaboration or feature requests  
-
----
+_"Mathematics is the language of markets. Code is the weapon."_ 🧠⚔️
