@@ -1,0 +1,11 @@
+Alpha Factor Model
+------------------
+Purpose: basic cross-sectional factor ranking (momentum) with long-short portfolio.
+
+Usage:
+  - pip install -r requirements.txt  (or pip install pandas numpy yfinance matplotlib)
+  - python alpha_factor_model.py
+Output:
+  - reports/alpha_cum.png
+Notes:
+  - Pure educational model; use longer history and transaction cost modeling for production.
