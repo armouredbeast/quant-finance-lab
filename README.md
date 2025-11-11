@@ -21,25 +21,57 @@ By using this repo, you agree to assume full responsibility for any outcomes.
 
 ---
 
-## 📘 Repository Structure
-quant-finance-lab/
-│
-├── portfolio_models/            ← Long-term investing / portfolio theory
-│     ├── 01_Portfolio_Optimization/
-│     ├── 02_CVaR_Funding_Optimization/
-│     ├── 03_Liquidity_Capital_Model/
-│     ├── 04_Multi_Factor_Risk_Model/
-│     ├── 05_Regime_Detection_Model/
-│
-├── intraday_strategies/         ← Execution / intraday / trading systems
-│     ├── 06_Market_Condition_Screener.py
-│     ├── 07_MeanReversion_5-Min.py
-│     ├── 08_Momentum_Breakout.py
-│     ├── 09_Backtester_Slippage.py
-│     ├── 10_SmartOrder_Execution.py
-│     ├── 11_FeatureDriven_SignalModel.py
-│     ├── 12_PolicySearch_Portfolio.py
-│
+# Quant Finance Lab — Project Index
+
+This repository contains 12 quantitative finance projects:
+6 portfolio–research models + 6 intraday trading models.
+
+---
+
+## 📁 Portfolio Models (Long-term / Institutional Quant Research)
+
+| # | Project Name                          | Folder                                 | Description |
+|---|---------------------------------------|-----------------------------------------|-------------|
+| 01 | Portfolio Optimization (Mean-Variance + Efficient Frontier) | `/portfolio_models/01_Portfolio_Optimization` | Optimizes asset weights using Markowitz Efficient Frontier. |
+| 02 | CVaR Funding Optimization            | `/portfolio_models/02_CVaR_Funding_Optimization` | Allocates capital while minimizing downside tail-risk (CVaR). |
+| 03 | Liquidity & Capital Model            | `/portfolio_models/03_Liquidity_Capital_Model` | Liquidity-adjusted position sizing & execution cost modeling. |
+| 04 | Backtesting & Signal Model           | `/portfolio_models/04_Backtesting_and_Signal_Model` | Generates signals + full backtest engine (PnL, Sharpe, turnover). |
+| 05 | Multi-Factor Risk Model (Fama-French + Regression Factors) | `/portfolio_models/05_Multi_Factor_Risk_Model` | Factor exposure, idiosyncratic risk, R² contribution analysis. |
+| 06 | Regime Detection (Hidden Markov Model) | `/portfolio_models/06_Regime_Detection_Model` | Detects market regimes (bull / bear / high vol) using HMM. |
+
+> Output: optimal weights, risk decomposition, factor exposure, reports saved automatically.
+
+---
+
+## ⚡ Intraday Models (Execution + Trading Strategies)
+
+| # | Project Name                          | Script                                 | Description |
+|---|---------------------------------------|-----------------------------------------|-------------|
+| 07 | Intraday Market Screener             | `/intraday_strategies/screener.py` | Screener scans top tickers based on volume + volatility spikes. |
+| 08 | Mean Reversion Strategy              | `/intraday_strategies/mean_reversion.py` | Statistical mean reversion using Z-Score bands. |
+| 09 | Momentum Breakout Strategy           | `/intraday_strategies/momentum_breakout.py` | Detects breakouts using ATR + trend filters. |
+| 10 | Backtester + Slippage Model          | `/intraday_strategies/backtester_slippage.py` | Realistic execution with slippage & transaction cost modeling. |
+| 11 | Feature Signal Model (ML Signals)    | `/intraday_strategies/feature_signal_model.py` | Extracts predictive features for trade entry / exit. |
+| 12 | Policy Search Portfolio (Reinforcement-style weight search) | `/intraday_strategies/policy_search_portfolio.py` | Searches optimal intraday allocation weights to maximize Sharpe. |
+
+> Output: trade logs, charts, slippage impact analysis, cumulative strategy returns.
+
+---
+
+### 🧠 Repo Philosophy
+
+> **"One project = one Python script. Clear. Modular. Readable."**
+
+No unnecessary modules, no over-engineering. Each project is structured for:
+- Recruiters (showcase your quant execution ability)
+- Portfolio managers (can understand result without reading code)
+- Speed of iteration (new models can be added quickly)
+
+---
+
+### 📌 Reports
+
+All projects automatically generate:
 ├── reports/                     ← Generated charts & result exports
 └── README.md
 ---
@@ -62,20 +94,7 @@ quant-finance-lab/
 | **12** | Portfolio Policy Search (RL-inspired) | Portfolio Allocation | Adaptive policy weight optimization |
 
 ---
-
-## ▶️ Running a Model
-
-Inside repo root:
-
-```sh
-python3 intraday_strategies/07_MeanReversion_5-Min.py
-
-python3 -m venv venv
-source venv/bin/activate     # macOS / Linux
-venv\Scripts\activate        # Windows
-pip install -r requirements.txt
-
-## 
+""" 
 🌱 Goal of This Repository
 	•	To learn quant finance by building, testing, and validating ideas.
 	•	To make complex quant models simple, reproducible, and open-source.
@@ -106,3 +125,29 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+"""
+
+
+
+## ▶️ Running a Model
+
+Inside repo root:
+
+```sh
+python3 intraday_strategies/07_MeanReversion_5-Min.py
+
+python3 -m venv venv
+source venv/bin/activate     # macOS / Linux
+venv\Scripts\activate        # Windows
+pip install -r requirements.txt
+
+
+Large files/data should remain gitignored.
+
+---
+
+### 🔧 Setup
+
+```bash
+pip install -r requirements.txt
+python script_name.py
