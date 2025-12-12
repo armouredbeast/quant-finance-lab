@@ -9,91 +9,186 @@
 
 ---
 
-## ⚠️ Legal Notice (Read Before Using)
+⚠️ Legal & Usage Disclaimer
 
-This repository is **strictly for educational and research purposes.**
+This repository is provided strictly for educational and research purposes.
+	•	No investment advice is provided.
+	•	No trading recommendations are made.
+	•	All code is experimental and illustrative.
+	•	Users assume full responsibility for any usage or outcomes.
 
-- No investment or trading advice is being provided.
-- Code examples are experimental research prototypes.
-- Use at your own risk — you are responsible for your decisions.
+This code is not production-ready trading software.
 
-By using this repo, you agree to assume full responsibility for any outcomes.
+⸻
 
----
+📁 Repository Structure
 
-# Quant Finance Lab — Project Index
-
-This repository contains 12 quantitative finance projects:
-6 portfolio–research models + 6 intraday trading models.
-
----
-
-## 📁 Portfolio Models (Long-term / Institutional Quant Research)
-
-| # | Project Name                          | Folder                                 | Description |
-|---|---------------------------------------|-----------------------------------------|-------------|
-| 01 | Portfolio Optimization (Mean-Variance + Efficient Frontier) | `/portfolio_models/01_Portfolio_Optimization` | Optimizes asset weights using Markowitz Efficient Frontier. |
-| 02 | CVaR Funding Optimization            | `/portfolio_models/02_CVaR_Funding_Optimization` | Allocates capital while minimizing downside tail-risk (CVaR). |
-| 03 | Liquidity & Capital Model            | `/portfolio_models/03_Liquidity_Capital_Model` | Liquidity-adjusted position sizing & execution cost modeling. |
-| 04 | Backtesting & Signal Model           | `/portfolio_models/04_Backtesting_and_Signal_Model` | Generates signals + full backtest engine (PnL, Sharpe, turnover). |
-| 05 | Multi-Factor Risk Model (Fama-French + Regression Factors) | `/portfolio_models/05_Multi_Factor_Risk_Model` | Factor exposure, idiosyncratic risk, R² contribution analysis. |
-| 06 | Regime Detection (Hidden Markov Model) | `/portfolio_models/06_Regime_Detection_Model` | Detects market regimes (bull / bear / high vol) using HMM. |
-
-> Output: optimal weights, risk decomposition, factor exposure, reports saved automatically.
-
----
-
-## ⚡ Intraday Models (Execution + Trading Strategies)
-
-| # | Project Name                          | Script                                 | Description |
-|---|---------------------------------------|-----------------------------------------|-------------|
-| 07 | Intraday Market Screener             | `/intraday_strategies/screener.py` | Screener scans top tickers based on volume + volatility spikes. |
-| 08 | Mean Reversion Strategy              | `/intraday_strategies/mean_reversion.py` | Statistical mean reversion using Z-Score bands. |
-| 09 | Momentum Breakout Strategy           | `/intraday_strategies/momentum_breakout.py` | Detects breakouts using ATR + trend filters. |
-| 10 | Backtester + Slippage Model          | `/intraday_strategies/backtester_slippage.py` | Realistic execution with slippage & transaction cost modeling. |
-| 11 | Feature Signal Model (ML Signals)    | `/intraday_strategies/feature_signal_model.py` | Extracts predictive features for trade entry / exit. |
-| 12 | Policy Search Portfolio (Reinforcement-style weight search) | `/intraday_strategies/policy_search_portfolio.py` | Searches optimal intraday allocation weights to maximize Sharpe. |
-
-> Output: trade logs, charts, slippage impact analysis, cumulative strategy returns.
-
----
-
-### 🧠 Repo Philosophy
-
-> **"One project = one Python script. Clear. Modular. Readable."**
-
-No unnecessary modules, no over-engineering. Each project is structured for:
-- Recruiters (showcase your quant execution ability)
-- Portfolio managers (can understand result without reading code)
-- Speed of iteration (new models can be added quickly)
-
----
-
-### 📌 Reports
-
-All projects automatically generate:
-├── reports/                     ← Generated charts & result exports
+quant-finance-lab/
+│
+├── pillar_1/           # Probability & Mathematical Foundations
+├── pillar_2/           # Time-Series & Statistical Modeling
+├── portfolio_models/   # Portfolio Theory & Risk Models
+├── intraday/           # Intraday & Algorithmic Trading Systems
+├── ml_for_markets/     # Machine Learning for Financial Markets
+├── pillar_6/           # Derivatives Pricing & Advanced Models
+│
+├── requirements.txt
+├── .gitignore
 └── README.md
----
-
-## ✅ Project Index (All 12 Included)
-
-| No. | Project Name | Domain | What It Demonstrates |
-|-----|-------------|---------|---------------------|
-| **01** | Portfolio Optimization (Markowitz) | Portfolio Theory | Efficient frontier & optimal weights |
-| **02** | CVaR Funding Optimization | Risk Management | Conditional VaR optimization |
-| **03** | Liquidity & Capital Model | Capital Efficiency | Turnover cost vs performance |
-| **04** | Multi-Factor Risk Model (PCA) | Systematic Alpha | Risk factor decomposition |
-| **05** | Regime Detection (HMM) | Market Regimes | Bull / Bear detection using HMM |
-| **06** | Market Condition Screener | Intraday Trading | Detect trending / ranging environments |
-| **07** | Intraday Mean Reversion (5-min) | Intraday Trading | RSI/VWAP reversion signals |
-| **08** | Intraday Momentum Breakout | Intraday Trading | Volume + price trend continuation |
-| **09** | Backtester with Slippage & Costs | Execution | Execution cost modeling |
-| **10** | Smart Order Routing (Weight Optimization) | Execution | Allocation across multiple assets |
-| **11** | Feature-Driven ML Signal Model | ML + Trading | ML signals from engineered features |
-| **12** | Portfolio Policy Search (RL-inspired) | Portfolio Allocation | Adaptive policy weight optimization |
 
 ---
+
+Each folder contains self-contained projects with code and documentation.
+
+⸻
+
+🧱 Pillar Overview
+
+🔹 Pillar 1 — Probability & Mathematical Foundations
+
+Folder: pillar_1/
+
+Focus:
+	•	Probability theory
+	•	Random variables & distributions
+	•	Monte Carlo simulation
+	•	Law of Large Numbers & CLT
+	•	Stochastic processes (Random Walk, Brownian Motion)
+	•	Markov chains & martingales
+
+Purpose:
+
+Build mathematical intuition required for all downstream quant models.
+
+⸻
+
+🔹 Pillar 2 — Time-Series & Statistical Modeling
+
+Folder: pillar_2/
+
+Projects include:
+	•	AR / MA / ARIMA model selection
+	•	GARCH volatility forecasting
+	•	Hidden Markov regime switching
+	•	Cointegration & pairs trading
+	•	Kalman filtering
+	•	Variance ratio testing
+
+Purpose:
+
+Model temporal dependence, volatility dynamics, and regime behavior.
+
+⸻
+
+🔹 Portfolio Models — Portfolio Theory & Risk
+
+Folder: portfolio_models/
+
+Projects include:
+	1.	Markowitz Efficient Frontier Optimizer
+	2.	CVaR & Tail-Risk Minimizer
+	3.	Liquidity-Adjusted Portfolio Optimizer
+	4.	Dynamic Backtesting & Signal Engine
+	5.	Multi-Factor Risk Model (Fama-French + custom factors)
+	6.	Regime-Aware Portfolio Allocator
+
+Purpose:
+
+Institutional portfolio construction, risk decomposition, and allocation logic.
+
+⸻
+
+🔹 Intraday — Algorithmic Trading & Execution
+
+Folder: intraday/
+
+Projects include:
+	•	SMA crossover strategies
+	•	Momentum & RSI intraday systems
+	•	Slippage-adjusted backtesting
+	•	Volatility-targeted strategies
+	•	Policy search–based allocation models
+
+Purpose:
+
+Understand execution, microstructure effects, and intraday risk.
+
+⸻
+
+🔹 Pillar 5 — Machine Learning for Markets
+
+Folder: ml_for_markets/
+
+Projects include:
+	•	Random Forest return classification
+	•	XGBoost feature importance
+	•	LSTM price prediction
+	•	Autoencoder volatility regime detection
+	•	SHAP-based model explainability
+	•	ML-driven factor construction (PCA + ML)
+
+Purpose:
+
+Apply ML as a modeling tool, not a black box.
+
+⸻
+
+🔹 Pillar 6 — Derivatives Pricing & Advanced Models
+
+Folder: pillar_6/
+
+Projects include:
+	•	Black-Scholes pricer + Greeks
+	•	Binomial tree pricer
+	•	Heston stochastic volatility model
+	•	Stochastic volatility calibration
+	•	Merton jump-diffusion
+	•	Exotic option pricing (Barrier / Asian)
+
+Purpose:
+
+Pricing, volatility modeling, and risk under uncertainty.
+
+⸻
+
+▶️ Running a Project
+	1.	Create a virtual environment:
+	python3 -m venv venv
+source venv/bin/activate   # macOS / Linux
+venv\Scripts\activate      # Windows
+	2.	Install dependencies:
+	pip install -r requirements.txt
+	3.	Run any project:
+	python pillar_1/probability_simulator.py
+python intraday/slippage_adjusted_backtester.py
+python pillar_6/black_scholes_pricer.py
+---
+Most scripts:
+	•	Download market data automatically
+	•	Plot results directly
+	•	Do not write files unless explicitly stated
+
+⸻
+
+🧠 Design Philosophy
+	•	One concept → one model
+	•	Readable > clever
+	•	Math first, code second
+	•	Plots for intuition
+	•	Minimal dependencies
+
+This repository is meant to be:
+	•	Interview-explainable
+	•	Research-oriented
+	•	Easy to extend
+
+⸻
+
+🌱 Project Goals
+	•	Build deep quantitative intuition through implementation
+	•	Bridge theory and real-world financial modeling
+	•	Create a transparent, open research archive
+	•	Serve as a long-term quant research notebook
 """ 
 🌱 Goal of This Repository
 	•	To learn quant finance by building, testing, and validating ideas.
