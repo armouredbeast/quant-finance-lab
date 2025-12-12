@@ -115,3 +115,9 @@ Every model produces intuitive plots for understanding behavior.
 Emphasis on why a model works, not just that it works.
 	•	Interview-ready
 Each project maps directly to real-world quant and risk roles.
+
+
+⚠️ Disclaimer
+
+This repository is intended for educational and research purposes only.
+It does not constitute investment advice, trading recommendations, or financial solicitation.
